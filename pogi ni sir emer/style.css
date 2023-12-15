@@ -1,0 +1,265 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding-top: 80px;
+   
+}
+
+@media (max-width:768px){
+    body{
+        padding-top: 70px;
+    }
+}
+.navbar{
+    top: 0;
+}
+
+#bg h1 {
+    font-family: Playball;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+#bg h1:hover {
+    animation-name: changenav;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changenav {
+    from {
+    }
+
+    to {
+        color: transparent          ;    
+        background: rgb(0,102,255);
+        background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(79,172,247,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        transform: scale(1.5);
+    }
+}
+
+.navbar{
+    z-index: 9999;
+}
+
+#bg {
+    background-color: #001220;
+}
+
+#bg a {
+    text-decoration: none;
+}
+
+#bg i {
+    color: white;
+    font-size: 50px;
+}
+
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#menu li:hover{
+    animation-name: changenav;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#menu li a:hover{
+    animation-name: changenav;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.bi-x-lg {
+    position: relative;
+    z-index: 150;
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes grow {
+    from {
+        font-size: 0px;
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 0%;
+        font-size: 0%;
+    }
+
+    to {
+        font-size: 50px;
+        opacity: 100%;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    #sidebar {
+        position: fixed;
+        display: flex;  
+        padding-top: 10px;
+        padding-left: 5px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #001220;
+        animation-name: translate;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        z-index: 100;
+    }
+
+    #sidebar2 {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgb(0,102,255);
+        background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(79,172,247,1) 100%);
+        animation-name: translate;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        z-index: 50;
+    }
+
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu li {
+        padding-bottom: 10px;
+    }
+
+    @keyframes translate {
+        from {
+            transform: translateX(-500px);
+            opacity: 90%;
+        }
+
+        to {
+            transform: translateX(0px);
+            opacity: 100%;
+        }
+    }
+}
+
+.footerbg {
+    background-color: #001220;
+    border-top: 1px solid rgba(0,102,255,1);
+}
+
+.footerbg h1 {
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: transparent;
+    background: rgb(0,102,255);
+    background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(79,172,247,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.footerbg li{
+    color: white;
+    font-family: Century Gothic;
+}
+
+.footerbg p{
+    color: white;
+    font-family: Century Gothic;
+}
+
+
+.footerbg i {
+    font-size: 35px;
+    color: white;
+}
+
+.footerbg a:hover{
+    animation-name: scale;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.footerbg i:hover {
+    animation-name: change;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change {
+    from {
+        
+    }
+
+    to {
+        color: transparent;
+        background: rgb(0,102,255);
+        background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(79,172,247,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+
+@keyframes scale {
+    from {
+        
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.scroll {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .scroll.show {
+    opacity: 1;
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes up{
+    from{
+      transform:translateY(100px);
+    }
+  
+    to{
+      transform: translateY(0px);
+    }
+  }

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Website Title -->
+  <title>Cars    | Gallery</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+  <!-- Link Website Icon -->
+  <!-- Link BOOTSTRAP LATEST CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- Link BOOTSTRAP 4.6.2 CSS FOR PADDING -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Link BOOTSTRAP 5.1 FOR GUTTERS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Link BOOTSTRAP ICONS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Link Playball Google Fonts CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar px-sm-5 position-fixed w-100" id="bg">
+    <!-- Left -->
+    <a href="index.html" class="pt-2">
+      <h1>Cars</h1>
+    </a>
+    <!-- Middle -->
+    <i class="bi bi-list d-flex d-md-none" onclick="onClick()"></i>
+    <!-- Right -->
+    <div class="d-none d-md-flex" id="sidebar">
+      <ul class="list-inline pt-3" id="menu">
+        <li class="list-inline-item px-3"><a href="index.html">Home</a></li>
+        <li class="list-inline-item px-3"><a href="gallery.html">Gallery</a></li>
+        <li class="list-inline-item px-3"><a href="about.html">About</a></li>
+        <li class="list-inline-item px-3"><a href="contact.html">Contact</a></li>
+        <li class="list-inline-item px-3"><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-md-none" id="sidebar2"></div>
+  </nav>
+
+  <!-- Content -->
+
+  <div class="bg-image text-white d-flex justify-content-center align-items-center">
+    <h1 class="display-1" id="typing" style="font-family: Playball;"></h1>
+  </div>
+
+
+  <h1 class="text-center">Car list</h1>
+
+  <div class="gallery" style="background-color: #001220;">
+    <div class="container p-0 p-sm-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-sm-4 d-flex justify-content-center content">
+        <img src="./img/1.jpg" class="img-fluid clickable-image" alt="...">
+        <img src="./img/2.jpg" class="img-fluid clickable-image" alt="...">
+        <img src="./img/3.jpg" class="img-fluid clickable-image" alt="...">
+      </div>
+    </div>
+  </div>
+
+<div class="gallery" style="background-color: #001220;">
+  <div class="container p-0 p-sm-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-sm-4 d-flex justify-content-center content">
+      <img src="./img/1.jpg" class="img-fluid clickable-image" alt="...">
+      <img src="./img/2.jpg" class="img-fluid clickable-image" alt="...">
+      <img src="./img/3.jpg" class="img-fluid clickable-image" alt="...">
+    </div>
+  </div>
+</div> 
+
+<div class="gallery" style="background-color: #001220;">
+  <div class="container p-0 p-sm-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-sm-4 d-flex justify-content-center content">
+      <img src="./img/1.jpg" class="img-fluid clickable-image" alt="...">
+      <img src="./img/2.jpg" class="img-fluid clickable-image" alt="...">
+      <img src="./img/3.jpg" class="img-fluid clickable-image" alt="...">
+    </div>
+  </div>
+</div> 
+
+  <!-- footer -->
+
+  <!-- Padding and color -->
+  <div class="footerbg py-3 py-md-5" style="overflow: hidden;">
+    <!-- Puts a Container -->
+    <div class="container">
+      <!-- Puts how many rows per size -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-lg-5 gy-4">
+
+        <!-- To center the content on the div itself -->
+        <div class="d-flex flex-column text-justify scroll">
+          <h1 class="text-nowrap">About</h1>
+          <p>"Our website features a lot of cars."
+          </p>
+        </div>
+
+     <!-- To center the content on the div itself -->
+     <div class="d-flex flex-column scroll">
+      <h1 class="text-nowrap">Social Media</h1>
+      <div class="d-flex gap-3">
+        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- To center the content on the div itself -->
+    <div class="d-flex flex-column scroll">
+      <h1 class="text-nowrap">Contacts</h1>
+      <ul class="list-unstyled">
+        <li>wacko@gmail.com</li>
+        <li>Daniel Padilla</li>
+        <li>09123456789</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Link JS FOR SIDEBAR -->
+  <script src="main.js"></script>
+  <!-- Typing Animation -->
+  <script src="gallery.js"></script>
+  <!-- Link BOOTSTRAP LATEST JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

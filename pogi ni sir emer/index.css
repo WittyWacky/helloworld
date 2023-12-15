@@ -1,0 +1,86 @@
+.bg-image{
+  background-image: url(./img/layered-waves-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 50rem;    
+  -webkit-background-size: cover; 
+}
+
+
+@media (min-width:768px){
+    .carousel-item{
+        height: 30rem;
+    }
+
+    .carousel-item > img{
+        height: 30rem;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:768px){
+  .carousel-item{
+      height: 35rem;
+  }
+
+  .carousel-item > img{
+      height: 35rem;
+      object-fit: cover;
+  }
+
+  .bg-image{
+    height: 35rem;
+  }
+}
+
+
+@media (max-width:576px){
+  .carousel-item{
+      height: 25rem;
+  }
+
+  .carousel-item > img{
+      height: 25rem;
+      object-fit: cover;
+  }
+
+  .bg-image{
+    height: 25rem;
+  }
+}
+
+@media (max-width:480px){
+
+
+  .bg-image{
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    top: 0;
+  }
+}
+
+.content h1{
+  font-family: Century Gothic;
+  color: transparent;
+    background: rgb(0,102,255);
+    background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(79,172,247,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.content p{
+  color: white;
+  font-family: Century Gothic;
+}
+
+button a{
+  color: white;
+  text-decoration: none;
+}
+
+button a:hover{
+  color: lightgray;
+  text-decoration: none;
+}
